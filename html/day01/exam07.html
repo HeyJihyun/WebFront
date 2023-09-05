@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam07</title>
+</head>
+<body>
+    <h2>우리분식 메뉴</h2>
+    <select multiple>
+        <option value="">떡볶이</option>
+        <option value="">김밥</option>
+        <option value="">순대</option>
+        <option value="">튀김</option>
+    </select>
+    <select size="3">
+        <option value="">떡볶이</option>
+        <option value="">김밥</option>
+        <option value="">순대</option>
+        <option value="">튀김</option>
+    </select>
+    <select>
+        <optgroup label="분식">
+            <option value="">떡볶이</option>
+            <option value="">김밥</option>
+            <option value="">순대</option>
+            <option value="">튀김</option>
+        </optgroup>
+        <optgroup label="식사">
+            <option value="">김치볶음밥</option>
+            <option value="">냉면</option>
+            <option value="">돌솥비빔밥</option>
+        </optgroup>
+    </select>
+
+    <datalist id="list01">
+        <option>김치볶음밥</option>
+        <option>냉면</option>
+        <option>돌솥비빔밥</option>
+    </datalist>
+    <datalist id="list02">
+        <option value="1">김치볶음밥</option>
+        <option value="2">냉면</option>
+        <option value="3">돌솥비빔밥</option>
+    </datalist>
+    <input list="list01">
+    <input list="list02">
+</body>
+</html>
