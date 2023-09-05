@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>exam10-audio,video</title>
 </head>
+
 <body>
     <h2>HTML5 이전 버전 : embed 태그 사용</h2>
     <embed src="./playlist/bear.mp3" type="" />
 
     <h2>HTML5 버전 : audio 태그 사용</h2>
-    <audio src="./playlist/bear.mp3" controls></audio>
+    <audio src="./playlist/bear.mp3" controls autoplay></audio>
 
+    <h2>HTML5 이전 버전</h2>
+    <embed src="./playlist/bear.mp4" type="" />
+
+    <h2>HTML5 버전 : vidio 태그 사용</h2>
+    <video src="./playlist/bear.mp4" controls autoplay width="500" height="480"></video>
+
+    <h2>YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gfk3QLU1x0E?si=7nZmAj7xNC3m5Fc7"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <hr>
+    <iframe width="640" height="480" src="playlist/웹프론트엔드프로그래밍.pdf" frameborder="0"></iframe>
 </body>
+
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam13-input</title>
+</head>
+
+<body>
+    <!-- 
+    <form>
+        <input type="text">
+            type   text(한출입력) 
+                   password(암호처리) 
+                   checkbox(중복처리) 
+                   radio(단일선택) 
+                   button(사용자정의이벤트) 
+                   file(첨부파일) 
+                   reset(초기화) 
+                   hidden(입력받지 않은 젇ㅇ보 전송) 
+                   submit(입력받은 모든 데이터 전송) 
+                   <textarea></textarea>여러줄 입력
+                </form>
+            -->
+    <form action="http://www.naver.com">
+        아이디 : <input type="text" name="id"><br>
+        패스워드 : <input type="password" name="pwd"><br>
+        희망연봉<br>
+        <fieldset>
+            <legend>희망연봉</legend>
+            <input type="radio" name="salary"> 2800-3000
+            <input type="radio" name="salary"> 3000-3300
+            <input type="radio" name="salary"> 3300-3500
+            <input type="radio" name="salary"> 3500이상
+            <input type="radio" name="salary"> 내규에 따름<br>
+        </fieldset>
+        <fieldset>
+            <legend>사용가능언어</legend>
+            <input type="checkbox" name="lang">C
+            <input type="checkbox" name="lang">C++
+            <input type="checkbox" name="lang">Java
+            <input type="checkbox" name="lang">JavaScript
+        </fieldset>
+        <h3>자기소개 (300자 내외)</h3>
+        <textarea name="" id="" cols="60" rows="5"></textarea>
+
+        <h3>첨부파일</h3>
+        <input type="file"><br>
+        <input type="submit" value="서버로 전송">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+
+</html>
