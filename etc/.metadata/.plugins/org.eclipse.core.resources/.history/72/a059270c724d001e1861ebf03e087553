@@ -1,0 +1,21 @@
+package backjoon;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String s[] = br.readLine().split(" ");
+		int a[] = {1, 1, 2, 2, 2, 8};
+		
+		for(int i=0; i < s.length; i++) {
+			a[i] -= Integer.parseInt(s[i]);
+		}
+		
+		for(int i : a) {
+			System.out.printf("%d ", i);
+		}
+		
+	}
+}

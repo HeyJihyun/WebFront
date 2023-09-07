@@ -1,0 +1,18 @@
+package backjoon;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+import sun.util.locale.StringTokenIterator;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String s = br.readLine();
+		StringTokenizer st = new StringTokenizer(s);
+		String sb1 = new StringBuffer().append(st.nextToken()).reverse().toString();
+		String sb2 = new StringBuffer().append(st.nextToken()).reverse().toString();
+		System.out.println(sb1.compareTo(sb2) > 0? Integer.parseInt(sb1): Integer.parseInt(sb2));
+	}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #number li {
+            float: left;
+            list-style-type: none;
+            margin-right: 30px;
+        }
+
+        li:first-child{
+            color: orange;
+        }
+
+        li:last-child{
+            color: blue;
+        }
+
+        li:nth-child(3n+2){
+            color: pink;
+        }
+
+        p{
+            clear: both;
+        }
+
+        a:link{
+            text-decoration: none;
+            color: green;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            font-weight: bold;
+            color: gray;
+        }
+
+        p:last-of-type:first-letter{
+            font-size: 3em;;
+        }
+
+        p:last-of-type::first-line{
+            text-decoration: underline;
+        }
+
+        p::selection{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul id="number">
+        <li>ONE</li>
+        <li>TWO</li>
+        <li>THREE</li>
+        <li>FOUR</li>
+        <li>FIVE</li>
+        <li>SIX</li>
+        <li>SEVEN</li>
+        <li>EIGHT</li>
+        <li>NINE</li>
+        <li>TEN</li>
+    </ul>
+    <p>
+        <a href="http://www.naver.com">naver</a>
+        <a href="http://www.daum.net">daum</a>
+    </p>
+    <p>
+        Abcdefghijklmnopqrstuvwxyz<br>
+        dfjiejfije
+    </p>
+</body>
+</html>
