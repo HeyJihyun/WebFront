@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let array = [10, 20, 30, 40]
+        // let copy = array // Shallow copy(얕은 복사)
+        // Deep coty(깊은 복사)
+        let copy = array.map(function(element){
+            return element
+        })
+        // let copy = [...array]
+        // let copy = []
+        // for(let data of array){
+        //     copy.push(data)
+        // }
+
+        document.write(`array : [${array}]<br>`)
+        document.write(`copy : [${copy}]<br>`)
+        
+        copy[2] = 10000
+        document.write(`array : [${array}]<br>`)
+        document.write(`copy : [${copy}]<br>`)
+
+        let bool = false
+        for(let data of array){
+            if (data % 3 == 0){
+                bool = true
+                break
+            }
+        }
+
+        bool = array.some(function(element){ //every 모든 원소가 3의 배수인가? some 하나만 3의배수
+            return element % 3 ==0
+        })
+
+        let s = 0;
+        for(let data of array){
+            s += data
+        }
+
+        array.reduce(function(left, right){
+            return left+right
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

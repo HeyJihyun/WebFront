@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test_function(){
+            // alert('call...')
+        }
+        // 함수 오버로딩 지원하지 않음
+        function test_function(a){
+            // alert('a : ' + a)
+        }
+        
+        // 익명함수
+        let f = function funct(){
+            alert('funct()...')
+        }
+
+        var aaa = function(){
+            alert('익명함수 aaa()...')
+        }
+        function aaa(){
+            alert('선언적 함수 aaa()...')
+        }
+
+        function callFunct(call){
+            // console.log(call);
+            call()
+        }
+
+        callFunct(function(){
+            alert('goooooooooooooooooooood!!!')
+        })
+
+
+        callFunct(prompt)
+        callFunct(alert)
+        callFunct(aaa)
+        // aaa()
+        // test_function('hello', 10, 20)
+        // test_function(10, 20,)
+        // test_function()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
