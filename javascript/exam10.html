@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func(a, b, c) {
+            if(a === undefined)
+                a = 0
+            if(b === undefined)
+                b = 0
+            if(c === undefined)
+                c = 0
+
+            document.write(`a = ${a}  b = ${b}  c = ${c}<br>`)
+        }
+        
+        function func(a, b, c) {
+            if(!a) a = 0
+            if(!b) b = 0
+            if(!c) c = 0
+            document.write(`a = ${a}  b = ${b}  c = ${c}<br>`)
+        }
+        
+        function func(a, b, c) {
+            a = a || 0
+            b = b || 0
+            c = c || 0
+            document.write(`a = ${a}  b = ${b}  c = ${c}<br>`)
+        }
+        
+        function func(a=0, b=0, c=0) {
+            document.write(`a = ${a}  b = ${b}  c = ${c}<br>`)
+        }
+
+        func()
+        func(10)
+        func(1,2)
+        func(10, 20, 30)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

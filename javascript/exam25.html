@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            let divTag = document.querySelector('div')
+            let hTag = document.querySelector('h1')
+            let spanTag = document.querySelector('span')
+
+            divTag.onclick = function() {
+                alert('div click...')
+            }
+
+            hTag.onclick = function(e) {
+                alert('h1 click...')
+                e.cancelBubble = true
+            }
+
+            spanTag.onclick = function() {
+                alert('span click...')
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>
+            <span>Hello</span>
+        </h1>
+    </div>
+</body>
+</html>

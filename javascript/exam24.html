@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            // 고전적 이벤트 모델
+            let btn = document.getElementById("btnClick")
+            btn.onclick = function() {
+                alert('btn click...')
+            }
+
+            let hTag = document.createElement('h1')
+            let text = document.createTextNode('클릭해봐')
+            hTag.appendChild(text)
+            document.body.appendChild(hTag)
+            hTag.style.backgroundColor = 'salmon'
+            hTag.onclick = function() {
+                alert('h1 click...')
+                this.style.color = 'blue'
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 인라인 이벤트 모델  -->
+    <button onclick="alert('click...')">클릭해봐</button>    
+    <button id="btnClick">클릭</button>
+</body>
+</html>

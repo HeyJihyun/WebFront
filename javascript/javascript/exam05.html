@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let array = [10, 20, 'A', true, null, "hello", 12.34]
+        document.write(`array : ${ array }  총 개수 : ${ array.length }개<br>`)
+        
+        array[7] = 'good'
+        document.write(`array : ${ array }  총 개수 : ${ array.length }개<br>`)
+        
+        array[10] = 100
+        document.write(`array : ${ array }  총 개수 : ${ array.length }개<br>`)
+
+        arr = []
+        arr[arr.length] = 10
+        arr[arr.length] = 43.67
+        arr.push(true)
+        arr.pop()
+
+        document.write(`arr : [${ arr }]<br>`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

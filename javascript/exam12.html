@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*
+        자바스크립트 내장함수
+        1. 타이머
+            setTimeout(함수, ms)
+            setInterval(함수, ms)
+            clearInterval()
+            clearTimeout()
+        2. 코드실행함수
+            eval()
+        3. 숫자변환함수
+            parseInt()
+            parseFloat()
+    */ 
+/*   
+        setTimeout(function() {
+            alert('1초가 경과되었습니다')
+        }, 1000)
+*/        
+
+        let id = setInterval(function() {
+            document.write(`현재시간 : ${ new Date()}<br>`)
+        }, 1000)
+
+        setTimeout(function() {
+            clearInterval(id)
+            alert('현재시간 log 종료...')
+        },10000)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+

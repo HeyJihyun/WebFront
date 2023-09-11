@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 선언적 함수 
+        function test_function(){
+            alert('call...')
+        } 
+
+        function test_function(a) {
+            alert('a : ' + a)
+        }
+
+        // 익명함수
+        let f = function() {
+            alert('func()...')
+        }
+        
+        var aaa = function() {
+            alert('익명함수 aaa()...')
+        }
+
+        function aaa() {
+            alert('선언적함수 aaa()...')
+        }
+
+        function callFunc(call) {
+            call()
+        }
+
+        callFunc(function() {
+            alert('gooooooooood!!!!!')
+        })
+        callFunc(prompt)
+        callFunc(alert)
+        callFunc(aaa)
+        // aaa()
+        // f()
+        // test_function('hello', 10, 20)
+        // test_function(10, 20)
+        // test_function()
+    </script>   
+</head>
+<body>
+    
+</body>
+</html>

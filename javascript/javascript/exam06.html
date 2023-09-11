@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let names = ['홍길동', '강길동', '홍길순', '최길동', '윤길동']
+
+        for(let i = 0; i < names.length; i++) {
+            document.write(`${i}번째 이름 : ${names[i]}<br>`)
+        }
+        document.write('<hr>')
+        
+        for(let i in names) {
+            document.write(`${i}번째 이름 : ${names[i]}<br>`)
+        }
+        document.write('<hr>')
+        
+        for(let name of names) {
+            document.write(`${name}  `)
+        }
+        document.write('<hr>')
+
+        names.forEach(function(element, index) {
+            document.write(`${index}번째 이름 : ${ element }<br>`)
+        })
+        document.write('<hr>')
+
+        names.sort()
+        
+        names.forEach(function(element, index) {
+            document.write(`${index}번째 이름 : ${ element }<br>`)
+        })
+        document.write('<hr>')
+
+        let nums = [10, 34, 78, 3, 6, 278, 8, 54]
+        document.write(nums + '<br>')
+        //nums.sort()
+        nums.sort(function(left, right) {
+            return right-left
+        })
+        document.write(nums + '<br>')
+
+        //[10, 34, 78, 3, 6, 278, 8, 54]
+        //[110, 134, 178, 103, 106, 378, 108, 154]
+        let nums2 = nums.map(function(element) {
+            return element + 100
+        })
+        document.write('nums2 : ' + nums2 + '<br>')
+    </script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

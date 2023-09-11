@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function returnFunc(name) {
+            let msg = `반갑습니다 [${name}]님!!!`
+            // let func = function(){
+            //     alert(msg)
+            // }
+            // return func
+
+            return function(){
+                alert(msg)
+            }
+        }
+
+        // let fn = returnFunc('홍길동')
+        // fn()
+        returnFunc('홍길동')()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+

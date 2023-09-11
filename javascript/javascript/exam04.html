@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = Number(prompt('정수를 입력하세요'))
+
+        let msg = `${ num } : ${num % 2 ? "홀수" : "짝수"}`
+        alert(msg)
+
+        switch(num % 2) {
+            case 1 : 
+                alert(`${num} : 홀수`)
+                break
+            case 0 : 
+                alert(`${num} : 짝수`)
+        }
+
+        if(num % 2) {
+            alert(`${num} : 홀수`)
+        } else {    
+            alert(`${num} : 짝수`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<!--
+    이름을 입력 : 홍길동
+    나이를 입력 : 26
+    홍길동님의 10년후의 나이는 36세입니다
+    다시 입력하시겠습니까? y // confirm()
+
+    이름을 입력 : 구길동
+    나이를 입력 : 57
+    구길동님의 10년후의 나이는 67세입니다
+    다시 입력하시겠습니까? n // confirm()
+
+    20 ~ 50사이의 정수를 입력 : 35
+    1
+    2
+    짝
+    4
+    5
+    짝
+    7
+    8
+    짝
+    뽀숑
+    11
+    12
+    짝
+    ...
+    18
+    짝
+    뽀뽀숑
+    21
+    ...
+    28
+    짝
+    뽀뽀뽀숑짝
+    짝
+    짝
+    짝짝
+    짝
+    짝
+-->

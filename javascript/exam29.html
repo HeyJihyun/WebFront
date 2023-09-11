@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #monitor {
+            text-align: right;
+        }
+    </style>
+    <script>
+        let f = document.col
+        window.onload = function () {
+            let tags = document.querySelectorAll('input[type=button]')
+            console.log(tags);
+        }
+
+        function clickBtn(value) {
+
+            let monitor = document.getElementById("monitor")
+
+            switch (value) {
+                case 'clear': 
+                    monitor.value = ''
+                    break;
+                case '=': 
+                    monitor.value = eval(monitor.value)
+                    break;  
+                default: 
+                    monitor.value += value
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="" name="col">
+        <input type="text" name="monitor" id="monitor"><br>
+        <input type="button" value="1" onclick="clickBtn(this.value)">
+        <input type="button" value="2" onclick="clickBtn(this.value)">
+        <input type="button" value="3" onclick="clickBtn(this.value)">
+        <input type="button" value="4" onclick="clickBtn(this.value)">
+        <input type="button" value="5" onclick="clickBtn(this.value)">
+        <input type="button" value="6" onclick="clickBtn(this.value)">
+        <input type="button" value="7" onclick="clickBtn(this.value)">
+        <input type="button" value="8" onclick="clickBtn(this.value)">
+        <input type="button" value="9" onclick="clickBtn(this.value)">
+        <input type="button" value="0" onclick="clickBtn(this.value)"><br>
+        <input type="button" value="+" onclick="clickBtn(this.value)">
+        <input type="button" value="-" onclick="clickBtn(this.value)">
+        <input type="button" value="*" onclick="clickBtn(this.value)">
+        <input type="button" value="/" onclick="clickBtn(this.value)">
+        <input type="button" value="=" onclick="clickBtn(this.value)">
+        <input type="button" value="clear" onclick="clickBtn(this.value)">
+    </form>
+</body>
+
+</html>
