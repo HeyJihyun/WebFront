@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     let person = {
+            'name' : '홍길동',
+            phone : '010-1111-2222',
+            'office-phone': '02-3456-7890',
+            "age" : 26
+        }
+
+        // JSON.stringify() = : JSON객체를 문자열로 변환
+        // JSON.parse() : 문자열을 JSON객체로 변환
+        let strPerson = JSON.stringify(person)
+        console.log(strPerson, typeof(strPerson))
+        let p = JSON.parse(strPerson)
+        console.log(p, typeof(p))
+        
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function Person(name, phone, addr){
+            this.name = name
+            this.phone = phone
+            this.addr = addr
+
+            this.info = function(){
+                for(let key in this){
+                    if(typeof(this[key]) != 'function'){
+                        document.write(`${key} : ${this[key]}<br>`)
+                    }
+                }
+            }
+        }
+
+        Person.prototype.aaa = function(){
+            alert('call aaa()...')
+        }
+        let p = new Person('홍길동', '010-1111-2222', '서울')
+        
+        p.aaa = function(){
+            alert('p.aaa() 호출')
+        }
+        let p2 = new Person('최길동', '010-3333-4444', '부산')
+        console.log(p.name)
+        p.info()
+        document.write(p.toString())
+        p.aaa()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
