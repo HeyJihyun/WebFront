@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Hello from './Hello';
+import Hello from './Hello'
+import Hello2 from './Hello2';
 
 function App() {
   return (
-    <div className="App">
-      /* <h1>Hello React</h1> */
+    <div>
+      {/*<h1>Hello React!!!</h1>*/}
+      <Hello name="리액트" />
       <Hello />
+      <Hello>GOOD-BYE</Hello>
+      <Hello2 />
     </div>
+
   );
 }
 
