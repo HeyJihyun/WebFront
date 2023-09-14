@@ -1,0 +1,19 @@
+.todoTemplate{
+    width: 520px;
+    border-radius: 10px 10px 0px 0px;
+    margin:  5em auto;
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+.todo-title{
+    display: flex;
+    background-color: burlywood;
+    border-radius: 10px 10px 0px 0px;
+    color: whitesmoke;
+    min-height: 4rem;
+    font-size : 1.5rem;
+    align-items:center;
+    justify-content: center;
+    font-weight: bold;
+
+}

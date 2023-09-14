@@ -1,8 +1,9 @@
 import { useState } from 'react';
 function Login(){
 
+
     const [id, setId] = useState('')
-    const [pw, setPw] = useState('')
+    const [pwd, setPw] = useState('')
 
     const inputText = (e) => {
         const {value} = e.target
@@ -15,7 +16,7 @@ function Login(){
 
     return <>
     <div>ID : <input value={id} onChange={inputText}/></div>
-    <div>PASSWORD : <input type="password" value={pw} onChange={inputPw}/></div>
+    <div>PASSWORD : <input type="password" value={pwd} onChange={inputPw}/></div>
     <hr/>
     </>
 }

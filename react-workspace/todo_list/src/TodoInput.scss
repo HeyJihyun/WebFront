@@ -1,0 +1,39 @@
+.todoInput {
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+
+    input{
+        flex: 1;
+        font-size: 1.2rem;
+        padding: 1rem;
+        outline: none;
+        border: 3px solid burlywood;
+        border-right: 0px;
+        background: none;
+        color: gray;
+        font-weight: bold;
+    }
+    
+    &::placeholder{
+        color: burlywood;
+        font-weight: bold;
+    }
+    
+    button{
+        cursor: pointer;
+        border: 3px solid burlywood;
+        border-left: 0px;
+        background-color: white;
+        width: 60px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: gray;
+        
+        &:hover{
+            color: burlywood;
+
+        }
+    }
+    
+}
