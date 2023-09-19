@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#next').click(function(){
+                $('img').first().prependTo('#gallery')
+            })
+            $('#prev').click(function(){
+                $('img').first().appendTo('#gallery')
+            })
+
+            setInterval(function(){
+                $('#next').trigger('click')
+            },2000)
+        })
+    </script>
+</head>
+
+<body>
+    <button id="prev">PREV</button>
+    <span id="gallery">
+        <img src="../html/image/icon.png" alt="">
+        <img src="../html/image/dog01.jpg" alt="">
+        <img src="../html/image/dog02.jpg" alt="">
+    </span>
+    <button id="next">NEXT</button>
+</body>
+
+</html>

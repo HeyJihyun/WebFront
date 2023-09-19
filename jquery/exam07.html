@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color:blue
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#add').click(function(){
+                // $('body').append(`<h1>세번째 문장</h1>`)
+                // $('body').prepend(`<h1>세번째 문장</h1>`)
+                // $('body').after(`<h1>세번째 문장</h1>`)
+                $('body').before(`<h1>세번째 문장</h1>`)
+            })
+            $('#del').click(function(){
+                $('h1:first').remove()
+            })
+            $('#red').click(function(){
+                $('h1').removeClass('blue').addClass('red')
+            })
+            $('#blue').click(function(){
+                $('h1').removeClass('red').addClass('blue')
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>첫번째 문장</h1>
+    <h1>두번째 문장</h1>
+    <button id="add">add</button>
+    <button id="del">delete</button>
+    <button id="red">RED</button>
+    <button id="blue">BLUE</button>
+</body>
+</html>

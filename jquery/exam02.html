@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div01{
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            // $('a[href]').hide()
+            // $(':button').hide(1000)
+            // $('input:text').hide()
+            $(':button').click(function(){
+                $(this).hide('fast')
+            })
+
+            $('body > h1').dblclick(function(){
+                $(this).hide(2000)
+            })
+
+            $('#div01').mouseenter(function(){
+                $(this).css('backgroundColor','yellow')
+            })
+
+            $('#div01').mouseleave(function(){
+                $(this).css({
+                    'backgroundColor':'white',
+                    'color' : 'red'
+                })
+            })
+
+            $('#div01').hover(function(){
+                $(this).css('font-size','1.5em')
+            },function(){
+                $(this).css('font-size','1em')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id = "div01">
+        div영역입니다 <br>
+        마우스를 진입시켜보세요
+    </div>
+    <h1>첫번째 문장</h1>
+    <h1>두번째 문장</h1>
+    <div>
+        <h1>세번째 문장</h1>
+    </div>
+    <h1>네먼째 문장</h1>
+    <input type="text">
+    <input type="button" value="button01">
+    <button>버튼02</button>
+    <a href="http://www.naver.com">네이버</a>
+</body>
+</html>

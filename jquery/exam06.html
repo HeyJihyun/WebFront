@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn01').click(function(){
+                $('#p01').text('<mark>변환된 문장입니다.</mark>')
+            })
+            $('#btn02').click(function(){
+                $('#p02').html('<mark>변환된 문장입니다.</mark>')
+            })
+            $('#btn03').click(function(){
+                alert($('a').attr('href'))
+            })
+            $('#btn04').click(function(){
+                $('a').attr('href','http://www.daum.net')
+            })
+            $('#btn05').click(function(){
+                // $('p').html('<em>문장변환 완료</em>')
+                $('p').html(function(index, e){
+                    return(`<em>${index+1} : 문장변환 완료</em>`)
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <a href="http:///www.naver.com">네이버</a>
+    <p id="p01">첫번째 문장입니다</p>
+    <p id="p02">두번째 문장입니다</p>
+    <button id="btn01">Text변환</button>
+    <button id="btn02">HTML변환</button>
+    <button id="btn03">주소추출</button>
+    <button id="btn04">주소변환</button>
+    <button id="btn05">문장변환</button>
+</body>
+</html>
